@@ -1,0 +1,51 @@
+---
+import Image from "astro/components/Image.astro"
+import Team from '../../public/imgs/teamwork.jpg'
+---
+<section class=" px-4 py-8 bg-green-700 mt-8 relative ">
+    <h2 class=" mt-4 m-auto text-center text-yellow-500 font-bold text-5xl">¿Por que somos lideres en el mercado?</h2>
+    <hr class=" w-96 bg-green-400 m-auto" >
+    <div class=" mt-10 flex justify-around ">
+        <div class=" rounded-2xl container px-8 bg-white" >
+            <div  >
+                <Image class="img" src={Team} alt="grupo"/>
+            </div>
+            <h4 class=" text-green-400 text-xl font-normal mt-2 " >La atencion contigo es lo mas importante</h4>
+            <h2 class=" text-green-600 text-4xl font-semibold my-4"  >Excelente Servicio al Cliente</h2>
+            <p class=" text-2xl  " >Nuestra política empresarial está basada en el cuidado, protección y servicio personalizado a todos nuestros clientes. Ya somos una gran comunidad “Familian ecoauto Tunja”</p>
+        </div>
+        <div class=" rounded-2xl container px-8 bg-white" >
+            <div  >
+                <Image class="img" src={Team} alt="grupo"/>
+            </div>
+            <h4 class=" text-green-400 text-xl font-normal mt-2 " >La atencion contigo es lo mas importante</h4>
+            <h2 class=" text-green-600 text-4xl font-semibold my-4"  >Excelente Servicio al Cliente</h2>
+            <p class=" text-2xl  " >Nuestra política empresarial está basada en el cuidado, protección y servicio personalizado a todos nuestros clientes. Ya somos una gran comunidad “Familia movilidad Tunja”</p>
+        </div>
+        <div class=" rounded-2xl container px-8 bg-white" >
+            <div  >
+                <Image class="img" src={Team} alt="grupo"/>
+            </div>
+            <h4 class=" text-green-400 text-xl font-normal mt-2 " >La atencion contigo es lo mas importante</h4>
+            <h2 class=" text-green-600 text-4xl font-semibold my-4"  >Excelente Servicio al Cliente</h2>
+            <p class=" text-2xl  " >Nuestra política empresarial está basada en el cuidado, protección y servicio personalizado a todos nuestros clientes. Ya somos una gran comunidad “Familian ecoauto Tunja”</p>
+        </div>
+    </div>
+
+
+</section>
+<style>
+    .container{
+        filter: drop-shadow(5px 5px 20px #1a5100);
+        width: 380px;
+        height: 480px;
+        overflow: hidden;
+    }
+    .img{
+        margin: auto;
+        margin-top: 2rem;
+        max-width: 470px;
+        width: 340px;
+        height: 250px; 
+    }
+</style>

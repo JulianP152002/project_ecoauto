@@ -1,0 +1,66 @@
+---
+import Image from "astro/components/Image.astro"
+import Team from '../../public/imgs/teamwork.jpg'
+import Security from '../../public/icons/security.svg'
+import Device from '../../public/icons/device-imac.svg'
+import Users from '../../public/icons/users.svg'
+import Heart from '../../public/imgs/heart.png'
+---
+<section class="  mt-36 relative flex flex-col m-auto">
+    <div class="bg-green-500 flex px-3 h-96 mb-20 text-center justify-center items-center " >
+        <div class=" content-center text-7xl font-bold "  >
+            <h2 class="text-white" >100% <span class=" py-4 text-yellow-600" >Satisfaccion Garantizada</span></h2>
+            <Image id="heart" class=" w-40" src={Heart} alt="Decive" />
+        </div>
+        <div class=" flex flex-col items-center" >
+            <i>
+                <Image class=" w-20" src={Device} alt="Decive" />
+            </i>
+            <h4 class=" text-yellow-600 text-4xl font-medium mb-3 " >Talento Humano</h4>
+            <p class=" text-white text-2xl text-balance " >Los trabajadores y colaboradores de <br> Cda Movilidad Bogotá están 
+                plenamente capacitados  para prestar servicio de forma eficaz y eficiente.
+            </p>
+        </div>
+        <div class=" flex flex-col items-center" >
+            <i>
+                <Image class=" w-20" src={Users} alt="Decive" />
+            </i>
+            <h4 class=" text-yellow-600 text-4xl font-medium mb-3 " >Equipos de Punta</h4>
+            <p class=" text-white text-2xl text-balance ">Los trabajadores y colaboradores de Cda Movilidad Bogotá están plenamente <br> capacitados para prestar servicio de forma agradable, eficaz y eficiente.
+            </p>
+        </div>
+        <div class=" w-2/4 flex flex-col items-center">
+            <i>
+                <Image class=" w-20" src={Security} alt="Decive" />
+            </i>
+            <h4 class=" text-yellow-600 text-4xl font-medium mb-3 ">Protocolos de Bioseguridad</h4>
+            <p class=" text-white text-2xl text-balance">Cda ecoauto implementó distintas efectivas medidas para cuidar <br> la salud de clientes y colaboradores.
+            </p>
+        </div>
+    </div>
+    <div>
+        <div class=" w-11/12 m-auto flex ">
+            <div class="w-2/4 text-center mt-40 items-center ">
+                <h2 class=" title font-bold text-6xl mb-8 text-green-900 m-auto ">Seguridad vial y cuidado del medio ambiente</h2>
+                <p class=" text-2xl text-balance" >Nos comprometemos día a día con tu cuidado, el de tu familia y el medio ambiente para hacer una ciudad más limpia y más segura. Por medio de la Revisión Técnico Mecánica,
+                     Revisión Preventiva y SOAT a cargo de profesionales certificados.</p>
+            </div>
+            <div class=" w-2/4" >
+                <Image class=" img " src={Team} alt="imagen del equipo"/>
+            </div>
+        </div>
+    </div>
+
+</section>
+<style>
+    .title{
+        filter: drop-shadow(7px 24px 22px #056303);
+
+    }
+    .img{
+        margin: auto;
+        width: 530px;
+        height:  340;
+        border-radius: 4rem;
+    }
+</style>
