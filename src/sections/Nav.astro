@@ -1,106 +1,115 @@
 ---
 import Image from "astro/components/Image.astro";
 import logue from "../../public/imgs/logo.jpg";
-import facebook from "../../public/icons/brand-facebook.svg";
-import instagram from "../../public/icons/brand-instagram.svg";
-import twitter from "../../public/icons/brand-twitter.svg";
+
+
 ---
 
 <section
-    class="bg-white items-center z-10  content-center flex relative text-2xl"
+    class=" fixed bg-white  z-10 h-auto w-full content-center flex  text-2xl"
 >
-    <div class="flex flex-row items-center content-between">
+    <div class=" grid_nav--fixer flex flex-row items-center content-around">
         <div
             id="container_img"
-            class=" hover:scale-110 delay-150 max-w-28 rounded-full overflow-hidden my-4 mx-8"
+            class=" hover:scale-110  flex relative rounded-full overflow-hidden my-4 mx-8"
         >
-            <Image src={logue} alt="Logo" />
+            <Image class=" flex relative" src={logue} alt="Logo" />
         </div>
         <h2 class="text-nowrap text-2xl">El mejor servicio <span class=" font-bold text-green-950 " >Para Nuestros Clientes</span></h2>
-        <!--   <ul>
-            <li>
-                <a href="">
-                    <Image src={instagram} alt='Instagram' />
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <Image src={facebook} alt='facebook' />
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <Image src={twitter} alt='twitter' />
-                </a>
-            </li>
-        </ul> -->
+
 
         <ul class="nav_list">
             <li class="nav_item">
-                <a class="nav_title" href="x">Inicio</a>
+                <a class="nav_title" href="pages/index">Inicio</a>
             </li>
 
             <li class="nav_item">
-                <a rel="noopener" target="_blank" class="nav_title" href="x"
+                <span class="nav_title" 
                     >Servivios
                     <i class="fa-solid fa-chevron-down nav_icon"></i>
-                </a>
+                </span>
                 <ul class="nav_submenu">
-                    <li class="submenu_item">
-                        <a
-                            rel="noopener"
-                            target="_blank"
-                            class="submenu_title"
-                            href="x">Revision Preventiva</a
-                        >
-                    </li>
 
                     <li class=" text-nowrap submenu_item">
                         <a
                             rel="noopener"
-                            target="_blank"
                             class="submenu_title"
-                            href="x">Resivision Tecnicomecanica</a
+                            href="/Services/Revision">Resivision Tecnicomecanica</a
+                        >
+                    </li>
+                    
+                    <li class=" text-nowrap submenu_item">
+                        <a
+                            rel="noopener"
+                            class="submenu_title"
+                            href="/Services/Prevents">Resivision Preventiva</a
                         >
                     </li>
 
                     <li class="submenu_item">
                         <a
                             rel="noopener"
-                            target="_blank"
                             class="submenu_title"
-                            href="x">Certificado</a
+                            href="/Services/Donwload">Desacargar Certificado</a
                         >
                     </li>
 
                 </ul>
             </li>
 
-
             <li class="nav_item">
-                <a rel="noopener" target="_blank" class="nav_title" href="x"
-                    >Blog
+                <span class="nav_title" 
+                    >Nosotros
                     <i class="fa-solid fa-chevron-down nav_icon"></i>
-                </a>
+                </span>
+                <ul class="nav_submenu">
 
+                    <li class=" my-2 text-nowrap submenu_item">
+                        <a
+                            rel="noopener"
+                            class="submenu_title"
+                            href="/Nosotros/Us">¿Quienes somos?</a
+                        >
+                    </li>
+                    
+
+
+                    <li class="submenu_item">
+                        <a
+                            rel="noopener"
+                            class="submenu_title"
+                            href="/Nosotros/Galery">Galeria</a
+                        >
+                    </li>
+
+                </ul>
             </li>
 
             <li class="nav_item">
-                <a class="nav_title" href="x">Nosotros</a>
-            </li>
-
-            <li class="nav_item">
-                <a class="nav_title" href="x">Contacto</a>
+                <a class="nav_title" href="/Contact">Contacto</a>
             </li>
         </ul>
     </div>
-    <div></div>
+
+    
 </section>
 
 <style>
+    .grid_nav--fixer{   
+        display: flex;
+        position: relative;
+        width: 100%; 
+        box-shadow: 2px 2px 40px 9px rgba(0, 0, 0, 50%);
+        transition: all 500ms ease-in-out;
+        padding-left: 20px;
+    }
     #container_img {
         box-shadow: 2px 1px 41px 9px #468a07;
+        transition: all 300ms ease-in-out;
+        cursor: pointer;
+        width: 6rem;
     }
+
     .nav_list {
         height: 100%;
         align-items: center;
@@ -110,21 +119,6 @@ import twitter from "../../public/icons/brand-twitter.svg";
         margin-top: -4rem;
     }
     
-
-    .menu_navbar--fixer {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 9;
-        background-color: var(--color-segundario);
-        box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 10%);
-        padding: 3rem 6rem;
-    }
-
-    .navbar_logo {
-        width: 187px;
-    }
 
     .nav_list {
         display: flex;

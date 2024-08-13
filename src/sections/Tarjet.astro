@@ -1,16 +1,16 @@
 ---
 import Image from "astro/components/Image.astro"
-import Team from '../../public/imgs/teamwork.jpg'
+import Team from '../../public/imgs/teamwork.webp'
 import Security from '../../public/icons/security.svg'
 import Device from '../../public/icons/device-imac.svg'
 import Users from '../../public/icons/users.svg'
-import Heart from '../../public/imgs/heart.png'
+
 ---
 <section class="  mt-36 relative flex flex-col m-auto">
-    <div class="bg-green-500 flex px-3 h-96 mb-20 text-center justify-center items-center " >
+    <div class="bac flex px-3 h-96 mb-20 text-center justify-center items-center " >
         <div class=" content-center text-7xl font-bold "  >
             <h2 class="text-white" >100% <span class=" py-4 text-yellow-600" >Satisfaccion Garantizada</span></h2>
-            <Image id="heart" class=" w-40" src={Heart} alt="Decive" />
+
         </div>
         <div class=" flex flex-col items-center" >
             <i>
@@ -45,7 +45,7 @@ import Heart from '../../public/imgs/heart.png'
                 <p class=" text-2xl text-balance" >Nos comprometemos día a día con tu cuidado, el de tu familia y el medio ambiente para hacer una ciudad más limpia y más segura. Por medio de la Revisión Técnico Mecánica,
                      Revisión Preventiva y SOAT a cargo de profesionales certificados.</p>
             </div>
-            <div class=" w-2/4" >
+            <div class=" overflow-hidden w-2/4" >
                 <Image class=" img " src={Team} alt="imagen del equipo"/>
             </div>
         </div>
@@ -60,7 +60,12 @@ import Heart from '../../public/imgs/heart.png'
     .img{
         margin: auto;
         width: 530px;
-        height:  340;
+        height:  400px;
         border-radius: 4rem;
+    }
+    .bac{
+        background-color: #3bff4d;
+        background-image: linear-gradient(147deg, #3bff4d 0%, #026d1b 74%);
+
     }
 </style>

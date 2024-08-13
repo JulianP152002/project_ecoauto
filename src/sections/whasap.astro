@@ -1,0 +1,24 @@
+---
+import Wap from '../../public/imgs/whasappt.svg'
+import Image from 'astro/components/Image.astro'
+---
+
+
+    <div class="fixxer w-24 fixed z-50 "  >
+        <Image id='car' class=' w-full   ' src={Wap} alt='logo de whasap'></Image>
+    </div>
+
+<style>
+    .fixxer{
+        width: 15rem;
+        bottom: 20px;
+        right: 0;
+        filter: drop-shadow(12px 10px 3px #0d0e0d);
+        cursor: pointer;
+        padding: 1.5rem 4rem;
+        transition: all 500ms ease-in-out;
+    }
+    .fixxer:hover{
+        transform: scale(110%);
+    }
+</style>

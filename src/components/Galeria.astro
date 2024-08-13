@@ -1,0 +1,48 @@
+---
+import "photoswipe/style.css";
+import { GAL } from "../conts/gale";
+---
+
+<div class="pswp-gallery galery max-w-[90%] mx-auto " id="gallery">
+
+  {
+    GAL.map(({ id, name }) => (
+      <a
+        class=" my-3 rounded-xl shadow-xl shadow-sky-300/10 overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-sky-300/75  transition-all "
+        href={`../../public/imgs/${id}.WebP`}
+        data-pswp-width="4500"
+        data-pswp-height="500"
+        target="_blank"
+      >
+        <div  >
+          <img class=" "
+            loading="lazy"
+            src={`../../public/imgs/${id}.WebP`}
+            alt={`Imagen del vehiculo ${name}`}
+          />
+        </div>
+      </a>
+    ))
+  }
+
+</div>
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+  });
+
+  lightbox.init();
+</script>
+<style>
+  h1{
+    padding: 20px;
+  }
+  .galery{
+    columns: 5 250px;
+  }
+</style>

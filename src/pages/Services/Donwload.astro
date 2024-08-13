@@ -1,0 +1,43 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../sections/Nav.astro";
+import Footer from "../../sections/Footer.astro";
+import Image from "astro/components/Image.astro";
+
+import Cer from "../../../public/imgs/donwloadRtm.webp";
+---
+
+<Layout description="" title=" Revision Tecnicomecanica Ecoauto Tunja-Boyaca">
+    <main>
+        <Nav class=" mb-10" ></Nav>
+        <section class=" m-auto h-auto flex flex-col relative w-full" >
+
+            <header class="bg-black w-full mt-10 h-[30rem] flex flex-col ">
+                <h1 class=" text-fuchsia-50 pt-12 m-auto text-7xl items-center flex font-bold " >
+                    Consulta Certificado RTM
+                </h1>
+                <h3 class="m-auto -mt-32 text-4xl text-white" >Siempre compartimos contigo el mejor conocimiento</h3>
+            </header> 
+
+            <iframe class=" m-auto pt-20 " width="660" height="415" src="https://www.youtube.com/embed/b9aW-9XmqMk?si=oL56raPtG8ZzEBTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <section class="flex flex-col items-center m-auto content-center relative">
+
+                <a target="_blank" no-refer href="https://www.runt.com.co/consultaCiudadana/#/consultaVehiculo" class=" flex relative my-24 px-80 h-[120rem] w-full  " >
+
+                    <Image class=" w-full relative" src={Cer} alt="imagen de la descarga"></Image>
+                </a>
+
+                <a target="_blank" no-refer href="https://www.runt.com.co/consultaCiudadana/#/consultaVehiculo" class=" cursor-pointer inline-flex items-center rounded-3xl px-6 py-5 hover:scale-110 transition-transform m-auto bg-yellow-500 " >
+        
+                    Descargar Tu certificado
+                    
+                    
+                </a>
+            </section>
+
+
+        </section>   
+        <Footer></Footer>
+ 
+    </main>
+</Layout>

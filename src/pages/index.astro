@@ -1,25 +1,32 @@
 ---
-
 import Layout from '../layouts/Layout.astro';
+import Whasap from '../sections/whasap.astro';
 import Nav from '../sections/Nav.astro';
 import Header from '../sections/Header.astro';
 import Services from '../sections/Services.astro';
 import Tarjet from '../sections/Tarjet.astro';
 import Us from '../sections/Us.astro';
 import Payments from '../sections/Payments.astro';
+import Sponsors from '../sections/Sponsors.astro';
+import Footer from '../sections/Footer.astro';
+
 
 
 ---
 
-<Layout title="CDA Ecoauto.">
+<Layout title="CDA Ecoauto." description='' >
 	<main class=" relative">
-
+		
 		<Nav></Nav>
 		<Header></Header>
-		<Services></Services>
-		<Tarjet></Tarjet>
-		<Us></Us>
+		<Whasap></Whasap>
+		<Services ></Services>
+		<Tarjet  ></Tarjet>
+		<Us ></Us>
 		<Payments></Payments>
+		<Sponsors></Sponsors>
+		<Footer></Footer>
 	</main>
 </Layout>
+
 
