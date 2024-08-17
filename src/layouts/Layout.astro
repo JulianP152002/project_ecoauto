@@ -1,15 +1,12 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions";
 interface Props {
     title: string;
-    description: string
+    description: string;
 }
 
-
-const { title,description } = Astro.props;
-const { currentLocale } = Astro
-
-
+const { title, description } = Astro.props;
+const { currentLocale } = Astro;
 ---
 
 <!doctype html>
@@ -21,41 +18,33 @@ const { currentLocale } = Astro
         <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
 
         <title>{title}</title>
-        <ViewTransitions></ViewTransitions>
+        <ViewTransitions />
     </head>
     <body>
         <slot />
-        <script src="../scripts/script.js"></script>
-        
-      <!--  <script>
-            function toggle (){
-                const mobilebtn = document.querySelector('.btn')
-                const mobilmenu = document.querySelector('menu')
+        <script is:inline>
+            document.addEventListener("DOMContentLoaded", () => {
+                const mobilebtn = document.querySelector(".btn");
+                const mobilmenu = document.querySelector("#menu");
 
-                mobilebtn.addEventListener('click', ()=>{
-                    let show = document.querySelector('.show')
+                mobilebtn.addEventListener("click", () => {
+                    let show = document.querySelector(".show");
 
-                    if(show){
-                        mobilmenu.classList.remove('show')
-                        mobilmenu.classList.add('menu')
-                    }else{
-                        mobilmenu.classList.add('show')
-                        mobilmenu.classList.remove('menu')
+                    if (show) {
+                        mobilmenu.classList.remove("show");
+                        mobilmenu.classList.add("menu");
+                    } else {
+                        mobilmenu.classList.add("show");
+                        mobilmenu.classList.remove("menu");
                     }
-                })
-
-            }
-            toggle()
-        </script> -->
-
+                });
+            });
+        </script>
     </body>
 </html>
 
 <style is:global>
-
-
     html {
-
         scroll-behavior: smooth;
         font-size: 10px;
         overflow-x: hidden;
@@ -145,5 +134,4 @@ const { currentLocale } = Astro
     body::-webkit-scrollbar-track:active {
         background: #d4d4d4;
     }
-    
 </style>
