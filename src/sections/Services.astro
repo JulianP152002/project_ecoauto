@@ -2,12 +2,14 @@
 import Image from 'astro/components/Image.astro'
 import Car from '../../public/icons/car.svg'
 import Numeros from '../components/Numeros.astro'
+import Rev from '../../public/imgs/revision.png'
+import Pre from '../../public/imgs/revision1.png'
 ---
 
 <section class=" flex m-auto justify-around items-center mt-24  w-full px-20 md:px-1 relative sm:flex-col ">
     <div class=" w-[360px] h-[420px]  flex  car relative  container_img rounded-2xl md:w-[300px] overflow-hidden sm:mb-10 sm:w-[400px]"> 
         <h2 class="absolute px-12 top-2/4 text-center text-white text-4xl mb-3 font-bold sm:px-28">Revision Tecnicomecanica</h2>
-        <img class=" w-full h-full" src="/../../public/imgs/revision.png" alt="">
+        <Image class=" w-full h-full" src={Rev} alt="Revision Tecnicomecanica Tunja">
         <div class=" px-4 m-auto car-content flex flex-col items-center justify-center absolute top-0 -right-full w-full h-full backdrop-blur-sm ">
             <Image class=" icon w-20" src={Car} alt="Car" title=' imagen de vehiculo cda ecoauto tunja '/>
             <h2 class=" text-white text-4xl mb-3 font-bold ">Revision Tecnocimecanica</h2>
@@ -17,7 +19,7 @@ import Numeros from '../components/Numeros.astro'
     </div>
     <div class=" w-[360px] h-[420px] mr-6 car1 relative container_img rounded-2xl overflow-hidden md:w-[300px] sm:w-[400px] "> 
         <h2 class=" absolute left-1/4 top-2/4 text-white text-4xl mb-3 font-bold">Revision Preventiva</h2>
-        <img class="  w-full h-full" src="../../../public/imgs/revision1.png" alt="">
+        <Image class="  w-full h-full" src={Pre} alt="">
         <div class=" px-4 m-auto car-content1 flex flex-col items-center justify-center absolute top-0 -right-full w-full h-full backdrop-blur-sm ">
             <Image class=" icon w-20" src={Car} alt="Car" title=' imagen de vehiculo cda ecoauto tunja '/>
             <h2 class=" text-white text-4xl mb-3 font-bold">Revision Preventiva</h2>
