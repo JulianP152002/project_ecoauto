@@ -6,23 +6,25 @@ import Whasap from "../../sections/whasap.astro";
 import Image from "astro/components/Image.astro";
 
 import logue from "../../../public/imgs/logo.jpg";
+import Mision from "../../../public/imgs/Mision.webp";
+import Vision from "../../../public/imgs/Vision.webp";
 
 ---
 
-<Layout title="Blog Ecoauto Tunja-Boyaca" description="" >
+<Layout title="Quienes somos en Cda Ecoauto Tunja-Boyaca" description="Aca te compartimos informacion de cda ecoauto Tunja dandonos a conocer mas a profundida" >
     <main class=" main relative">
         <Nav></Nav>
         <Whasap></Whasap>
         <section>
             <header class="w-full h-[50rem] flex flex-col ">
-                <h1 class=" text-fuchsia-50 pt-12 m-auto text-9xl drop-shadow-2xl items-center flex font-extrabold " >
+                <h1 class=" text-fuchsia-50 pt-12 m-auto text-9xl drop-shadow-2xl items-center flex font-extrabold lg:text-8xl " >
                     CDA ECOAUTO TUNJA
                 </h1>
             </header> 
             <section class="h-auto " >
-                <div>
-                    <article class=" p-20 flex flex-row bg-slate-50 content-around w-full ">
-                        <div class=" flex flex-col m-auto basis-1/2"  >
+                <div >
+                    <article class=" p-20 flex flex-row bg-slate-50 content-around w-full md:flex md:flex-col ">
+                        <div class=" flex flex-col m-auto basis-1/2 md:mb-8 "  >
                             <h2 class=" text-center text-6xl font-bold " >
                                 ¿Quienes Somos?
                             </h2>
@@ -65,46 +67,49 @@ import logue from "../../../public/imgs/logo.jpg";
 
                 </div>
                 <div>
-                    <article class=" p-20 flex flex-row bg-slate-50 content-around w-full ">
-                        <div class=" flex flex-col m-auto basis-1/2"  >
+                    <article class=" p-20 flex flex-row bg-slate-50 content-around w-full md:flex md:flex-col  ">
+                        <div class=" flex mr-4 flex-col m-auto basis-1/2"  >
                             <h2 class=" text-center text-6xl font-bold " >
                                 Nuestra Mision
                             </h2>
-                            <p class=" text-4xl font-normal mt-10  " >
+                            <p class=" text-4xl font-normal mt-10 md:mb-8  " >
                                 En el <strong>CDA ECOAUTO </strong> trabajamos de manera honesta, eficaz y con alta calidad en el servicio para garantizar que los vehiculos automores
                                 cumplan normativamente las condiciones mecanicas, ambientales y de seguridad atravez de la Revision Tecnicomecanica
                             </p>
                         </div>
-                        <div class=" container flex basis-1/2 " >
-                            <Image class="m-auto rounded-full"  src={logue} alt="logo de cda ecoauto tunja"></Image>
+                        <div class=" container  flex basis-1/2 " >
+                            <Image class="m-auto rounded-xl " title="Mision cda ecoauto tunja"  src={Mision} alt="logo de cda ecoauto tunja"></Image>
                         </div>
                     </article>
                 </div>
                 <div>
-                    <article class=" p-20 flex flex-row bg-slate-50 content-around w-full ">
+                    <article class=" p-20 flex flex-row bg-slate-50 content-around w-full md:flex md:flex-col  ">
 
-                        <div class=" container flex basis-1/2 " >
-                            <Image class="m-auto rounded-full"  src={logue} alt="logo de cda ecoauto tunja"></Image>
+                        <div class=" container  flex basis-1/2 md:hidden " >
+                            <Image class="m-auto rounded-3xl" title="vision de cda ecoauto tunja"  src={Vision} alt="logo de cda ecoauto tunja"></Image>
                         </div>
                         <div class=" flex flex-col m-auto basis-1/2"  >
                             <h2 class=" text-center text-6xl font-bold " >
                                 Nuestra Vision
                             </h2>
-                            <p class=" text-4xl font-normal mt-10  " >
+                            <p class=" text-4xl font-normal mt-10 md:mb-8 " >
                                 El <strong> CDA ECOAUTO</strong> sera reconocido en la ciudad de Tunja y sus alrededores como la mejor opcion de servicio en el mercado de 
                                 Revision Tecnicomecanica y Emisiones contaminantes que aporte y contribuya con el mejoramiento del medio ambiente y a la disminucion de la accidentalidad
                             </p>
                         </div>
+                        <div class=" hidden  container basis-1/2 md:flex " >
+                            <Image class=" m-auto rounded-3xl " title="logo de revision tecnicomecanica ecoauto tunja"  src={Vision} alt="logo de cda ecoauto tunja"></Image>
+                        </div>
                     </article>
                 </div>
-                <div class=" mt-20 py-20 w-full flex flex-row justify-around text-whrite" >
-                    <div class=" flex flex-col text-8xl text-yellow-100 ">
+                <div class=" mt-20 py-20 w-full flex flex-row justify-around text-whrite md:pl-6" >
+                    <div class=" flex flex-col text-8xl text-yellow-100 sm:text-6xl ">
                         <h1 class=" mb-8 font-bold " >AGENTA TU CITA ¡YA!</h1>
-                        <p class=" text-4xl" >Servicio de SOAT y de Revisión Técnico Mecánica para tu vehículo.</p>
+                        <p class=" text-4xl sm:text-3xl " >Servicio de SOAT y de Revisión Técnico Mecánica para tu vehículo.</p>
                     </div>
                     
 
-                    <a class=" py-24 pr-28 " href="">
+                    <a class=" py-24 pr-28 " target="_blank" href="https://api.whatsapp.com/send?phone=573173333330&text=Hola%20CDA%20ECOAUTO%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20revisi%C3%B3n%20t%C3%A9cnico%20mec%C3%A1nica%2C%20gracias%20%F0%9F%99%8F%F0%9F%8F%BC%20">
                         <button
                             class="rounded-3xl text-2xl hover:scale-110 hover:shadow-2xl transition ease-in-out duration-300  px-14 py-6"
                         >

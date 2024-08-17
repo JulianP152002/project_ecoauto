@@ -5,29 +5,29 @@ import Clien from '../../public/imgs/serviceclient.webp'
 import Hap from '../../public/imgs/happys.webp'
 
 ---
-<section class=" px-4 py-8 mt-8 relative ">
-    <h2 class=" mt-4 m-auto text-center text-yellow-500 font-bold text-5xl">¿Por que somos lideres en el mercado?</h2>
-    <hr class=" w-96 bg-green-400 m-auto" >
-    <div class=" mt-10 flex justify-around ">
-        <div class=" rounded-2xl container px-8 bg-white" >
+<section class=" m-auto md:flex md:justify-center md:flex-col sm:px-2 px-4 py-8 mt-8 relative ">
+    <h2 class="  mt-4 m-auto text-center text-yellow-500 font-bold text-5xl">¿Por que somos lideres en el mercado?</h2>
+    <hr class="  w-96 bg-green-400 m-auto" >
+    <div class=" md:pt-8 md:justify-center md:items-center  md:grid md:grid-cols-2 mt-10 flex justify-around sm:flex sm:flex-col sm:m-auto sm:px-5 sm:py-28 sm:w-full ">
+        <div class=" rounded-2xl overflow-hidden w-[380px] h-[480px]  px-8 bg-white lg:w-[300px] lg:h-[530px] sm:mb-4 sm:w-full sm:h-[450px] " >
             <div  >
-                <Image class="img" src={Clien} alt="grupo"/>
+                <Image class="img" src={Clien} alt="grupo" title="imagen clientes satisfechos cda ecoauto tunja"/>
             </div>
             <h4 class=" text-green-400 text-2xl pt-3 font-normal" >Te Sentiras Como en Casa</h4>
             <h2 class=" text-green-600 text-4xl font-semibold my-4"  >Excelente Servicio al Cliente</h2>
             <p class=" text-2xl  " >Ofrecemos servicio rápido y con las mejores condiciones para la necesidad de cada persona, ofrecemos bebidas calientes y frías, entretenimiento y snacks, mientras salen los resultados de tu vehículo.</p>
         </div>
-        <div class=" rounded-2xl container px-8 bg-white" >
+        <div class=" md:mb-10 rounded-2xl overflow-hidden w-[380px] h-[480px] px-8 bg-white lg:w-[300px] lg:h-[530px] sm:mb- sm:w-full sm:h-[450px] " >
             <div  >
-                <Image class="img" src={Space} alt="grupo"/>
+                <Image class="img" src={Space} alt="grupo" title="imagen de nuestra ifraestructura cda ecoauto tunja"/>
             </div>
             <h4 class=" text-green-400 text-xl font-normal mt-2 " > Infraestructura cómoda</h4>
             <h2 class=" text-green-600 text-4xl font-semibold my-4"  > Amplias instalaciones</h2>
             <p class=" text-2xl  " >Nos esforzamos día a día por mejorar en todos los aspectos y poder cuidar de ti y tu familia de forma sencilla y eficaz. Te ofrecemos salas de espera amplias y comodas, por si vienes con tu familia, a trabajar o a descansar.</p>
         </div>
-        <div class=" rounded-2xl container px-8 bg-white" >
+        <div class=" md:w-full md:items-center md:mx-64 md:h-[450px] rounded-2xl overflow-hidden w-[380px] h-[480px] px-8 bg-white lg:w-[300px] lg:h-[530px] " >
             <div  >
-                <Image class="img" src={Hap} alt="grupo"/>
+                <Image class="img" src={Hap} alt="grupo" title="mejor atencion al cliente cda ecoauto tunja"/>
             </div>
             <h4 class=" text-green-400 text-xl font-normal mt-2 " >La atencion contigo es lo mas importante</h4>
             <h2 class=" text-green-600 text-4xl font-semibold my-4"  >Excelente Servicio al Cliente</h2>
@@ -54,7 +54,7 @@ import Hap from '../../public/imgs/happys.webp'
     .img{
         margin: auto;
         margin-top: 2rem;
-        max-width: 470px;
+        max-width: -webkit-fill-available;
         width: 340px;
         height: 250px; 
     }

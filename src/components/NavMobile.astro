@@ -1,0 +1,114 @@
+---
+import Image from "astro/components/Image.astro";
+import logue from "../../public/imgs/logo.jpg";
+---
+
+
+<section
+    class="absolute hidden mm:flex bg-white mm:fixed transition-all duration-700 top-1 z-50  justify-end p-8 shadow-2xl shadow-red-900 menu"
+    id="menu"
+>
+    <div class=" flex flex-col  relative  items-end p-5  ">
+
+        <div class=" text-center flex  w-full pb-8 " >
+            <div
+            class=" hover:scale-110 w-16 h-16 flex relative rounded-full mr-4 overflow-hidden"
+            >
+                <Image class=" flex relative" src={logue} alt="Logo" title="Logo de Cda Ecoauto tunja" />
+            </div>
+            <h2 class=" font-bold pt-8" >CDA ECOAUTO TUNJA</h2>
+        </div>
+
+
+
+
+        <ul class="">
+            <li class=" text-3xl  font-bold pb-4 hover:scale-110 transition ">
+                <a class="" href="/index">Inicio</a>
+            </li>
+
+            <li class="">
+                <span class=" text-3xl text-black/80 font-bold   " 
+                    >Servivios
+                
+                </span>
+                <ul class=" text-white">
+
+                    <li class=" text-2xl pl-3 text-black/80 text-nowrap hover:text-red-600 hover:scale-105 transition  ">
+                        <a
+                            rel="noopener"
+                            class="submenu_title"
+                            href="/Services/Revision">Resivision Tecnicomecanica</a
+                        >
+                    </li>
+                    
+                    <li class=" text-2xl pl-3 text-black/80  text-nowrap hover:text-red-600 hover:scale-105 transition  ">
+                        <a
+                            rel="noopener"
+                            class="submenu_title"
+                            href="/Services/Prevents">Resivision Preventiva</a
+                        >
+                    </li>
+
+                    <li class=" text-2xl pl-3 text-black/80 pb-4 hover:text-red-600 hover:scale-105 transition ">
+                        <a
+                            rel="noopener"
+                            class=""
+                            href="/Services/Donwload">Desacargar Certificado</a
+                        >
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="">
+                <span class="  text-3xl font-bold" 
+                    >Nosotros
+                    
+                </span>
+                <ul class="">
+
+                    <li class="text-2xl pl-3 text-black/80 text-nowrap hover:text-red-600  hover:scale-105 transition ">
+                        <a
+                            rel="noopener"
+                            class="submenu_title"
+                            href="/Nosotros/Us">¿Quienes somos?</a
+                        >
+                    </li>
+                    
+
+
+                    <li class=" text-2xl pl-3 text-black/80  hover:text-red-600 hover:scale-105 transition  ">
+                        <a
+                            rel="noopener"
+                            class=""
+                            href="/Nosotros/Galery">Galeria</a
+                        >
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class=" text-2xl pl-3 text-black/80  hover:text-red-600 hover:scale-105 transition  ">
+                <a class="" href="/Contact">Contacto</a>
+            </li>
+        </ul>
+    </div>
+
+    
+</section>
+
+<style>
+
+    .menu{
+      visibility: hidden;
+      opacity: 0;
+      right: -300px;
+    }
+    .show{
+        visibility: visible;
+        opacity: 1;
+        right: 1;
+        
+    }
+</style>

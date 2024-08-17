@@ -19,11 +19,34 @@ const { currentLocale } = Astro
         <meta name="description" content="Astro description" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
+
         <title>{title}</title>
         <ViewTransitions></ViewTransitions>
     </head>
     <body>
         <slot />
+        <script src="../scripts/script.js"></script>
+        
+      <!--  <script>
+            function toggle (){
+                const mobilebtn = document.querySelector('.btn')
+                const mobilmenu = document.querySelector('menu')
+
+                mobilebtn.addEventListener('click', ()=>{
+                    let show = document.querySelector('.show')
+
+                    if(show){
+                        mobilmenu.classList.remove('show')
+                        mobilmenu.classList.add('menu')
+                    }else{
+                        mobilmenu.classList.add('show')
+                        mobilmenu.classList.remove('menu')
+                    }
+                })
+
+            }
+            toggle()
+        </script> -->
 
     </body>
 </html>

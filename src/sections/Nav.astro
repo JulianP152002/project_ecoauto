@@ -2,25 +2,24 @@
 import Image from "astro/components/Image.astro";
 import logue from "../../public/imgs/logo.jpg";
 
-
 ---
 
 <section
-    class=" fixed bg-white  z-10 h-auto w-full content-center flex  text-2xl"
+    class=" relative    "
 >
-    <div class=" grid_nav--fixer flex flex-row items-center content-around">
+    <div class=" fixed bg-[#fff] flex w-full text-2xl  items-center z-10 ">
         <div
             id="container_img"
             class=" hover:scale-110  flex relative rounded-full overflow-hidden my-4 mx-8"
         >
-            <Image class=" flex relative" src={logue} alt="Logo" />
+            <Image class=" flex relative" src={logue} alt="Logo" title="Logo de Cda Ecoauto tunja" />
         </div>
         <h2 class="text-nowrap text-2xl">El mejor servicio <span class=" font-bold text-green-950 " >Para Nuestros Clientes</span></h2>
 
 
-        <ul class="nav_list">
+        <ul class="nav_list flex flex-row pl-[42rem] xl:pl-[30rem]  lg:pl-[10rem] xl:py-14 mm:hidden ">
             <li class="nav_item">
-                <a class="nav_title" href="pages/index">Inicio</a>
+                <a class="nav_title  " href="/Layout">Inicio</a>
             </li>
 
             <li class="nav_item">
@@ -89,43 +88,44 @@ import logue from "../../public/imgs/logo.jpg";
                 <a class="nav_title" href="/Contact">Contacto</a>
             </li>
         </ul>
+        <button class=" hidden btn z-10  mm:block absolute right-6 " >
+            <div class="  pt-2 flex items-center flex-col  justify-center bg-gray-800 rounded-full w-[5rem] h-[5rem]" >
+                <span class="  bg-slate-50 w-[2rem] mb-2 p-[1px] rounded-2xl "></span>
+                <span class="  bg-slate-50 w-[2rem] mb-2 p-[1px] rounded-2xl "></span>
+                <span class=" bg-slate-50 w-[1rem] mb-2 p-[1px] rounded-2xl -mr-3 "></span>
+            </div>
+        </button>
+
+        
+
+
     </div>
+    
 
     
 </section>
 
 <style>
-    .grid_nav--fixer{   
-        display: flex;
-        position: relative;
-        width: 100%; 
-        box-shadow: 2px 2px 40px 9px rgba(0, 0, 0, 50%);
-        transition: all 500ms ease-in-out;
-        padding-left: 20px;
-    }
+
     #container_img {
         box-shadow: 2px 1px 41px 9px #468a07;
         transition: all 300ms ease-in-out;
         cursor: pointer;
         width: 6rem;
+        min-width: 6rem;
     }
 
     .nav_list {
+    
+        flex-direction: row;
+        
         height: 100%;
         align-items: center;
         justify-content: center;
-        padding-top: 4rem;
-        padding-left: 42rem;
-        margin-top: -4rem;
     }
     
 
-    .nav_list {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        margin-top: -4rem;
-    }
+
 
     .nav_item {
         position: relative;

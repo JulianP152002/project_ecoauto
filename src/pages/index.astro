@@ -9,15 +9,15 @@ import Us from '../sections/Us.astro';
 import Payments from '../sections/Payments.astro';
 import Sponsors from '../sections/Sponsors.astro';
 import Footer from '../sections/Footer.astro';
-
+import NavMobile from '../components/NavMobile.astro';
 
 
 ---
 
-<Layout title="CDA Ecoauto." description='' >
+<Layout title="CDA Ecoauto Tunja." description=' pagina oficial de Cda ecoauto en la ciudad de tunja es el mejor centro de diagnostico en tunja, certificando eficacia y productividad en la revision tecnicomecanica de vehiculos particulares, publicos y motocicletas ' >
 	<main class=" relative">
-		
 		<Nav></Nav>
+		<NavMobile class=" mm:flex" ></NavMobile>
 		<Header></Header>
 		<Whasap></Whasap>
 		<Services ></Services>
@@ -26,6 +26,8 @@ import Footer from '../sections/Footer.astro';
 		<Payments></Payments>
 		<Sponsors></Sponsors>
 		<Footer></Footer>
+
+
 	</main>
 </Layout>
 

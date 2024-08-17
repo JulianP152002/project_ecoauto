@@ -5,27 +5,28 @@ import Footer from "../sections/Footer.astro";
 import Numeros from "../components/Numeros.astro";
 ---
 
-<Layout title="Blog Ecoauto Tunja-Boyaca" description="">
+<Layout title="Contacto de Cda Ecoauto Tunja" description=" Aca te damos a conocer el contacto de cda ecoauto tunja, numero telefonico cda ecoauto, correo electronico cda ecoauto, ubicacion cda ecoauto tunja y demas ">
     <main>
         <Nav class="mb-10" />
         <header class="w-full h-[50rem] flex flex-col">
             <h1
-                class="text-fuchsia-50 pt-12 m-auto text-9xl drop-shadow-2xl items-center flex font-extrabold"
+                class="text-fuchsia-50 pt-12 m-auto text-9xl drop-shadow-2xl items-center flex font-extrabold md:text-8xl md:text-center md:items-center"
             >
                 NUESTRO CONTACTO
             </h1>
         </header>
 
+        <h3 class="-mb-14 px-28 mt-40 contact_map-title">
+            Conta<span>ctanos</span>
+        </h3>
 
-
-        <h3 class=" -mb-14 px-28 mt-40 contact_map-title">Conta<span>ctanos</span></h3>
-            
-  
-        <div class="p-24 mt-20 text-black flex flex-row w-full justify-around">
-
+        <div
+            class="p-24 mt-20 text-black flex flex-row w-full justify-around md:flex md:flex-col"
+        >
             <a
-                class="flex-col justify-around m-auto p-8 relative bg-green-800 flex basis-[30%] h-[18rem] items-center shadow-2xl text-center cursor-pointer hover:scale-110 transition-all overflow-hidden rounded-2xl"
-                href=""
+                target="_blank"
+                class="flex-col justify-around m-auto p-8 relative bg-green-800 flex basis-[30%] h-[18rem] items-center shadow-2xl text-center cursor-pointer hover:scale-110 transition-all overflow-hidden rounded-2xl md:w-full md:mb-5"
+                href="https://api.whatsapp.com/send?phone=573173333330&text=Hola%20CDA%20ECOAUTO%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20revisi%C3%B3n%20t%C3%A9cnico%20mec%C3%A1nica%2C%20gracias%20%F0%9F%99%8F%F0%9F%8F%BC%20"
             >
                 <i class="w-1/4">
                     <svg
@@ -41,7 +42,7 @@ import Numeros from "../components/Numeros.astro";
                 <p class="font-semibold text-yellow-100 text-2xl">3173333330</p>
             </a>
             <a
-                class="flex-col justify-around m-auto p-8 relative bg-green-800 flex basis-[30%] h-[18rem] items-center shadow-2xl text-center cursor-pointer hover:scale-110 transition-all overflow-hidden rounded-2xl"
+                class="flex-col justify-around m-auto p-8 relative bg-green-800 flex basis-[30%] h-[18rem] items-center shadow-2xl text-center cursor-pointer hover:scale-110 transition-all overflow-hidden rounded-2xl md:w-full md:mb-5"
                 href="mailto:dacdaecoauto@gmail.com"
                 target="_blank"
             >
@@ -62,7 +63,7 @@ import Numeros from "../components/Numeros.astro";
             </a>
             <a
                 target="_blank"
-                class="flex-col m-auto p-8 justify-around relative bg-green-800 flex basis-[30%] h-[18rem] items-center shadow-2xl text-center cursor-pointer hover:scale-110 transition-all overflow-hidden rounded-2xl"
+                class="flex-col m-auto p-8 justify-around relative bg-green-800 flex basis-[30%] h-[18rem] items-center shadow-2xl text-center cursor-pointer hover:scale-110 transition-all overflow-hidden rounded-2xl md:w-full md:mb-5"
                 href="https://www.google.com/maps/dir//Avenida+Nte.+%23+57+-+32,+Tunja,+Boyac%C3%A1/@5.5640747,-73.4291945,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e401751cd9ef1f9:0x2db6116c9767ad06!2m2!1d-73.3467925!2d5.5640804?entry=ttu"
             >
                 <i class="w-1/4">
@@ -76,24 +77,31 @@ import Numeros from "../components/Numeros.astro";
                         ></path></svg
                     >
                 </i>
-                <p class="font-semibold text-yellow-100 text-2xl">Avenida Nte. # 57 - 32, Tunja, Boyacá</p>
+                <p class="font-semibold text-yellow-100 text-2xl">
+                    Avenida Nte. # 57 - 32, Tunja, Boyacá
+                </p>
             </a>
-
         </div>
-        <Numeros class="p-8" ></Numeros>
+        <Numeros class="p-8" />
         <section class="container_contact">
-            <div class="contact_map">
-                <h3 class="contact_map-title">Ubica<span>cion</span></h3>
-                <iframe class="contact_map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15884.079260022716!2d-73.3467925!3d5.5640804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e401751cd9ef1f9%3A0x2db6116c9767ad06!2sREVISI%C3%93N%20T%C3%89CNICO%20MEC%C3%81NICA%20CDA%20ECOAUTO!5e0!3m2!1ses-419!2sco!4v1723518263499!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact_map mt-11 mb-40 md:mb-32 sm:mb-1 ">
+                <h3 class="contact_map-title md:py-6">Ubica<span>cion</span></h3>
+                <iframe
+                    class="contact_map mt-11 mb-40 md:mb-32 sm:mb-2  h-[60rem] md:h-[48rem] sm:h-[35rem]"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15884.079260022716!2d-73.3467925!3d5.5640804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e401751cd9ef1f9%3A0x2db6116c9767ad06!2sREVISI%C3%93N%20T%C3%89CNICO%20MEC%C3%81NICA%20CDA%20ECOAUTO!5e0!3m2!1ses-419!2sco!4v1723518263499!5m2!1ses-419!2sco"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        
         </section>
-        <hr class=" mt-10 bg-red-500 w-full" >
         <Footer />
     </main>
 </Layout>
 <style>
-    hr{
+    hr {
         margin-top: 20rem;
         width: 10rem;
         background-color: red;
@@ -101,29 +109,28 @@ import Numeros from "../components/Numeros.astro";
     header {
         background-image: url(../../../public/imgs/cda.webp);
     }
-    .container_contact{
-    margin-top: 5rem;
-    width: 98%;
-    margin: auto
-}
-.contact_title{
-    margin-top: 4rem;
-    margin-left: 2rem;
-}
-.contact_map{
-    padding-top: 5rem;
-    margin: auto;
-    width: 90%;
-    height: 60rem;
-    margin-bottom: 10rem;
-}
+    .container_contact {
+        margin-top: 5rem;
+        width: 98%;
+        margin: auto;
+    }
+    .contact_title {
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
+    .contact_map {
+        margin: auto;
+        width: 90%;
+    
+        
+    }
 
-.contact_map-title{
-    font-size: 3rem;
-    font-weight: 200;
-}
+    .contact_map-title {
+        font-size: 3rem;
+        font-weight: 200;
+    }
 
-.contact_map-title span{
-    color: #3189B6;
-}
+    .contact_map-title span {
+        color: #3189b6;
+    }
 </style>

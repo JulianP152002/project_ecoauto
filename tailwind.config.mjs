@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	darkMode: 'class',
 	theme: {
 		extend: {
 		},
@@ -13,12 +14,14 @@ export default {
 	  
 			'lg': {'max': '1023px'},
 			// => @media (max-width: 1023px) { ... }
-	  
+			'mm': {'max': '850px'},
+			
 			'md': {'max': '767px'},
 			// => @media (max-width: 767px) { ... }
 	  
 			'sm': {'max': '639px'},
 			// => @media (max-width: 639px) { ... }
+			'xx': {'max': '530px'}
 		  }
 	},
 	plugins: [],

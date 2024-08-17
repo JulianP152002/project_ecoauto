@@ -8,14 +8,17 @@ import Wap from "../../public/imgs/whasappt.svg";
 ---
 
 <section>
-    <div class="flex p-24 text-black font-semibold">
+    <div class="flex md:grid md:grid-cols-2 xx:flex xx:flex-col p-24 text-black font-semibold">
         <div class="w-80 mr-10 basis-1/4 right-5 items-center mb-6 ml-10">
-            <Image src={Car} alt="Carro" />
+            <Image src={Car} alt="Carro" title=" imagen del vehiculo cda ecoauto tunja" />
         </div>
-        <div class="flex text-xl py-1 leading-8 flex-col basis-1/4">
+        <div class="flex md:pb-4  text-xl py-1 leading-8 flex-col basis-1/4">
             <h3 class="mb-5">CONTACTANOS</h3>
 
-            <div class="items-center h-10 flex">
+            <a  
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=573173333330&text=Hola%20CDA%20ECOAUTO%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20revisi%C3%B3n%20t%C3%A9cnico%20mec%C3%A1nica%2C%20gracias%20%F0%9F%99%8F%F0%9F%8F%BC%20"
+                class="items-center  h-10 flex">
                 <svg
                     class="w-12 mr-2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +37,7 @@ import Wap from "../../public/imgs/whasappt.svg";
                     ></path>
                 </svg>
                 <span>317 3333330</span>
-            </div>
+            </a>
             <a
                 target="_blank"
                 href="mailto:dacdaecoauto@gmail.com"
@@ -79,22 +82,24 @@ import Wap from "../../public/imgs/whasappt.svg";
                 href="https://www.google.com/maps/place/REVISI%C3%93N+T%C3%89CNICO+MEC%C3%81NICA+CDA+ECOAUTO/@5.5640804,-73.3467925,15z/data=!4m6!3m5!1s0x8e401751cd9ef1f9:0x2db6116c9767ad06!8m2!3d5.5640804!4d-73.3467925!16s%2Fg%2F11h4cg3458?entry=ttu"
                 class="items-center flex flex-row h-16"
             >
-                <Image class="w-12 mr-2" src={Location} alt="icono" />
+                <Image class="w-12 mr-2" src={Location} alt="icono" title="logo ubicacion cda ecoauto tunja"/>
                 <span>Avenida Nte. # 57 - 32, Tunja, Boyacá </span>
             </a>
         </div>
         <div class="flex flex-col text-xl basis-1/4">
             <h3>REDES SOCIALES</h3>
             <div class=" flex flex-row relative">
-                <a class=" max-w-[5rem]" href="">
+                <a 
+                    target="_blank"
+                    class=" max-w-[5rem]" href="https://www.facebook.com/cdaecoautotunja/?locale=es_LA"   >
                     <Image src={Fcaebook} alt="logo facebook" />
                 </a>
-                <a class=" max-w-[5rem]" href=""><Image src={Instagram} alt="logo facebook" /></a>
-                <a class=" max-w-[5rem]" href=""><Image class=" w-[5rem]" src={Wap} alt="logo facebook" /></a>
+                <a class=" max-w-[5rem]" target="_blank" href="https://www.instagram.com/cda_ecoautotunja/"><Image src={Instagram} alt="logo facebook" title="instagram cda ecoauto tunja" /></a>
+                <a class=" max-w-[5rem]" target="_blank" href="https://api.whatsapp.com/send?phone=573173333330&text=Hola%20CDA%20ECOAUTO%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20de%20la%20revisi%C3%B3n%20t%C3%A9cnico%20mec%C3%A1nica%2C%20gracias%20%F0%9F%99%8F%F0%9F%8F%BC%20"><Image class=" w-[5rem]" src={Wap} alt="logo facebook cda ecoauto tunja" title='contacto, numero telefonico cda ecoauto tunja' /></a>
             </div>
 
         </div>
-        <div class="flex basis-1/4">
+        <div class=" hidden basis-1/4">
             <h3>CALIFICANOS</h3>
         </div>
     </div>
