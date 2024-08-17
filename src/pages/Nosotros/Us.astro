@@ -14,6 +14,24 @@ import Vision from "../../../public/imgs/Vision.webp";
 <Layout title="Quienes somos en Cda Ecoauto Tunja-Boyaca" description="Aca te compartimos informacion de cda ecoauto Tunja dandonos a conocer mas a profundida" >
     <main class=" main relative">
         <Nav></Nav>
+        <script>
+           
+			const mobilebtn = document.querySelector(".btn");
+			const mobilmenu = document.querySelector("#menu");
+
+			mobilebtn.addEventListener("click", () => {
+				let show = document.querySelector(".show");
+
+				if (show) {
+					mobilmenu.classList.remove("show");
+					mobilmenu.classList.add("menu");
+				} else {
+					mobilmenu.classList.add("show");
+					mobilmenu.classList.remove("menu");
+				}
+			});
+	
+		</script>
         <Whasap></Whasap>
         <section>
             <header class="w-full h-[50rem] flex flex-col ">

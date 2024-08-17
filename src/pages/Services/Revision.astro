@@ -15,6 +15,24 @@ import logue from "../../../public/imgs/logo.jpg";
 <Layout  description="" title=" Revision Tecnicomecanica Ecoauto Tunja-Boyaca" title=" Cda ecoauto te hace saber precios de revisiones tecnicomecanica de vehiculos particulares, publicos y de servicio especial">
     <main class=" relative" >
         <Nav></Nav>
+        <script>
+           
+			const mobilebtn = document.querySelector(".btn");
+			const mobilmenu = document.querySelector("#menu");
+
+			mobilebtn.addEventListener("click", () => {
+				let show = document.querySelector(".show");
+
+				if (show) {
+					mobilmenu.classList.remove("show");
+					mobilmenu.classList.add("menu");
+				} else {
+					mobilmenu.classList.add("show");
+					mobilmenu.classList.remove("menu");
+				}
+			});
+	
+		</script>
         <Whasap></Whasap>
         <section class=" m-auto h-auto flex flex-col relative w-full" >
             <header class="bg-black w-full mt-10 h-[30rem] flex flex-col ">

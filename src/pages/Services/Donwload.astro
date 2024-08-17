@@ -12,6 +12,24 @@ import Cer from "../../../public/imgs/donwloadRtm.webp";
     <main class=" relative">
         <Nav class=" mb-10" ></Nav>
         <Whasap></Whasap>
+        <script>
+           
+			const mobilebtn = document.querySelector(".btn");
+			const mobilmenu = document.querySelector("#menu");
+
+			mobilebtn.addEventListener("click", () => {
+				let show = document.querySelector(".show");
+
+				if (show) {
+					mobilmenu.classList.remove("show");
+					mobilmenu.classList.add("menu");
+				} else {
+					mobilmenu.classList.add("show");
+					mobilmenu.classList.remove("menu");
+				}
+			});
+	
+		</script>
         <section class=" m-auto h-auto flex flex-col relative w-full  " >
 
             <header class="bg-black w-full mt-10 h-[30rem] flex flex-col  ">

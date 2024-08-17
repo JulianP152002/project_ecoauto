@@ -1,12 +1,14 @@
 ---
 import Image from "astro/components/Image.astro";
 import logue from "../../public/imgs/logo.jpg";
+import NavMobile from "../components/NavMobile.astro";
 
 ---
 
 <section
     class=" relative    "
 >
+    <NavMobile class=" mm:flex" ></NavMobile>
     <div class=" fixed bg-[#fff] flex w-full text-2xl  items-center z-10 ">
         <div
             id="container_img"
@@ -96,10 +98,28 @@ import logue from "../../public/imgs/logo.jpg";
             </div>
         </button>
 
-        
+        <script>
+           
+			const mobilebtn = document.querySelector(".btn");
+			const mobilmenu = document.querySelector("#menu");
+
+			mobilebtn.addEventListener("click", () => {
+				let show = document.querySelector(".show");
+
+				if (show) {
+					mobilmenu.classList.remove("show");
+					mobilmenu.classList.add("menu");
+				} else {
+					mobilmenu.classList.add("show");
+					mobilmenu.classList.remove("menu");
+				}
+			});
+	
+		</script>
 
 
     </div>
+    
     
 
     
