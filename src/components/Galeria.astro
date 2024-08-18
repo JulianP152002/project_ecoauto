@@ -9,7 +9,7 @@ import { GAL } from "../conts/gale";
     GAL.map(({ id, name }) => (
       <a
         class=" my-3 rounded-xl shadow-xl shadow-sky-300/10 overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-sky-300/75  transition-all "
-        href={`/imgs/gallery/${id}.webp`}
+        href={`/gallery/${id}.webp`}
         data-pswp-width="4500"
         data-pswp-height="500"
         target="_blank"
@@ -17,7 +17,7 @@ import { GAL } from "../conts/gale";
         <div  >
           <img class=" "
             loading="lazy"
-            src={`/imgs/gallery/${id}.webp`}
+            src={`/gallery/${id}.webp`}
             alt={`Imagen del vehiculo ${name}`}
           />
         </div>
