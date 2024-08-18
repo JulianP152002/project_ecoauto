@@ -9,24 +9,7 @@ import NavMobile from "../../components/NavMobile.astro";
 <Layout title="Galeria Ecoauto Tunja-Boyaca" description=" Galeria de cda ecoauto Tunja, aca encontraras imagenes de vehiculos a los cuales inspeccionamos y experiencias del mejor cda en la ciudad de tunja-boyaca" >
     <main class=" bg-slate-900 ">
         <Nav class=" relative mb-10" ></Nav>
-        <script>
-           
-			const mobilebtn = document.querySelector(".btn");
-			const mobilmenu = document.querySelector("#menu");
 
-			mobilebtn.addEventListener("click", () => {
-				let show = document.querySelector(".show");
-
-				if (show) {
-					mobilmenu.classList.remove("show");
-					mobilmenu.classList.add("menu");
-				} else {
-					mobilmenu.classList.add("show");
-					mobilmenu.classList.remove("menu");
-				}
-			});
-	
-		</script>
         <section>
             <header class="w-full h-[50rem] flex flex-col ">
                 <h1 class=" text-fuchsia-50 pt-12 m-auto text-9xl drop-shadow-2xl shadow-sky-700/10 items-center flex font-extrabold " >

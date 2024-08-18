@@ -2,44 +2,50 @@
 import Image from "astro/components/Image.astro";
 import logue from "../../public/imgs/logo.jpg";
 import NavMobile from "../components/NavMobile.astro";
-
 ---
 
-<section
-    class=" relative    "
->
-    <NavMobile class=" mm:flex" ></NavMobile>
-    <div class=" fixed bg-[#fff] flex w-full text-2xl  items-center z-10 ">
+<section class="relative">
+    <NavMobile class="mm:flex" />
+    <div class="fixed bg-[#fff] flex w-full text-2xl items-center z-10">
         <div
             id="container_img"
-            class=" hover:scale-110  flex relative rounded-full overflow-hidden my-4 mx-8"
+            class="hover:scale-110 flex relative rounded-full overflow-hidden my-4 mx-8"
         >
-            <Image class=" flex relative" src={logue} alt="Logo" title="Logo de Cda Ecoauto tunja" />
+            <Image
+                class="flex relative"
+                src={logue}
+                alt="Logo"
+                title="Logo de Cda Ecoauto tunja"
+            />
         </div>
-        <h2 class="text-nowrap text-2xl">El mejor servicio <span class=" font-bold text-green-950 " >Para Nuestros Clientes</span></h2>
+        <h2 class="text-nowrap text-2xl">
+            El mejor servicio <span class="font-bold text-green-950"
+                >Para Nuestros Clientes</span>
+        </h2>
 
-
-        <ul class="nav_list flex flex-row pl-[42rem] xl:pl-[30rem]  lg:pl-[10rem] xl:py-14 mm:hidden ">
+        <ul
+            class="nav_list flex flex-row pl-[42rem] xl:pl-[30rem] lg:pl-[10rem] xl:py-14 mm:hidden"
+        >
             <li class="nav_item">
-                <a class="nav_title  " href="/">Inicio</a>
+                <a class="nav_title" href="/">Inicio</a>
             </li>
 
             <li class="nav_item">
-                <span class="nav_title" 
+                <span class="nav_title"
                     >Servivios
                     <i class="fa-solid fa-chevron-down nav_icon"></i>
                 </span>
                 <ul class="nav_submenu">
-
-                    <li class=" text-nowrap submenu_item">
+                    <li class="text-nowrap submenu_item">
                         <a
                             rel="noopener"
                             class="submenu_title"
-                            href="/Services/Revision">Resivision Tecnicomecanica</a
+                            href="/Services/Revision"
+                            >Resivision Tecnicomecanica</a
                         >
                     </li>
-                    
-                    <li class=" text-nowrap submenu_item">
+
+                    <li class="text-nowrap submenu_item">
                         <a
                             rel="noopener"
                             class="submenu_title"
@@ -54,26 +60,22 @@ import NavMobile from "../components/NavMobile.astro";
                             href="/Services/Donwload">Desacargar Certificado</a
                         >
                     </li>
-
                 </ul>
             </li>
 
             <li class="nav_item">
-                <span class="nav_title" 
+                <span class="nav_title"
                     >Nosotros
                     <i class="fa-solid fa-chevron-down nav_icon"></i>
                 </span>
                 <ul class="nav_submenu">
-
-                    <li class=" my-2 text-nowrap submenu_item">
+                    <li class="my-2 text-nowrap submenu_item">
                         <a
                             rel="noopener"
                             class="submenu_title"
                             href="/Nosotros/Us">¿Quienes somos?</a
                         >
                     </li>
-                    
-
 
                     <li class="submenu_item">
                         <a
@@ -82,7 +84,6 @@ import NavMobile from "../components/NavMobile.astro";
                             href="/Nosotros/Galery">Galeria</a
                         >
                     </li>
-
                 </ul>
             </li>
 
@@ -90,43 +91,25 @@ import NavMobile from "../components/NavMobile.astro";
                 <a class="nav_title" href="/Contact">Contacto</a>
             </li>
         </ul>
-        <button class=" hidden btn z-10  mm:block absolute right-6 " >
-            <div class="  pt-2 flex items-center flex-col  justify-center bg-gray-800 rounded-full w-[5rem] h-[5rem]" >
-                <span class="  bg-slate-50 w-[2rem] mb-2 p-[1px] rounded-2xl "></span>
-                <span class="  bg-slate-50 w-[2rem] mb-2 p-[1px] rounded-2xl "></span>
-                <span class=" bg-slate-50 w-[1rem] mb-2 p-[1px] rounded-2xl -mr-3 "></span>
+        <button class="hidden btn z-10 mm:block absolute right-6">
+            <div
+                class="pt-2 flex items-center flex-col justify-center bg-gray-800 rounded-full w-[5rem] h-[5rem]"
+            >
+                <span class="bg-slate-50 w-[2rem] mb-2 p-[1px] rounded-2xl"
+                ></span>
+                <span class="bg-slate-50 w-[2rem] mb-2 p-[1px] rounded-2xl"
+                ></span>
+                <span
+                    class="bg-slate-50 w-[1rem] mb-2 p-[1px] rounded-2xl -mr-3"
+                ></span>
             </div>
         </button>
 
-        <script>
-           
-			const mobilebtn = document.querySelector(".btn");
-			const mobilmenu = document.querySelector("#menu");
-
-			mobilebtn.addEventListener("click", () => {
-				let show = document.querySelector(".show");
-
-				if (show) {
-					mobilmenu.classList.remove("show");
-					mobilmenu.classList.add("menu");
-				} else {
-					mobilmenu.classList.add("show");
-					mobilmenu.classList.remove("menu");
-				}
-			});
-	
-		</script>
-
 
     </div>
-    
-    
-
-    
 </section>
 
 <style>
-
     #container_img {
         box-shadow: 2px 1px 41px 9px #468a07;
         transition: all 300ms ease-in-out;
@@ -136,16 +119,12 @@ import NavMobile from "../components/NavMobile.astro";
     }
 
     .nav_list {
-    
         flex-direction: row;
-        
+
         height: 100%;
         align-items: center;
         justify-content: center;
     }
-    
-
-
 
     .nav_item {
         position: relative;
@@ -247,7 +226,7 @@ import NavMobile from "../components/NavMobile.astro";
         opacity: 1;
         z-index: 999;
         left: 0;
-        background: #fff
+        background: #fff;
     }
 
     .nav_item:hover .submenu_item {

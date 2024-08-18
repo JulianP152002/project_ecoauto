@@ -23,6 +23,21 @@ const { currentLocale } = Astro;
     <body>
         <slot />
 
+        <script>
+
+
+            document.addEventListener('astro:page-load' ,()=>{
+                const mobilebtn = document.querySelector(".btn");
+                const mobilmenu = document.querySelector("#menu");
+
+                mobilebtn?.addEventListener("click", () => {
+                    mobilmenu.classList.toggle("hidden");
+                });
+            })
+
+        
+
+        </script>
     </body>
 </html>
 
