@@ -13,7 +13,54 @@ const { currentLocale } = Astro;
 <html lang="es" lang={currentLocale}>
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Astro description" />
+        <!-- Primary Meta Tags -->
+        <title>CDA Ecoauto Tunja.</title>
+        <meta name="title" content="CDA Ecoauto Tunja." />
+        <meta
+            name="description"
+            content="Cda Ecoauto Tunja- Revision tecnicomecanica, Emision de gases y contaminantes"
+            content="pagina oficial de Cda ecoauto en la ciudad de tunja es el mejor centro de diagnostico en tunja, certificando eficacia y productividad en la revision tecnicomecanica de vehiculos particulares, publicos y motocicletas"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="https://www.facebook.com/cdaecoautotunja/?locale=es_LA"
+            content="https://cda-ecoauto-tunja.vercel.app/"
+        />
+        <meta property="Facebook Cda Ecoauto" content="CDA Ecoauto Tunja." />
+        <meta
+            property="Redes Sociales Cda Ecoauto Tunja"
+            content="Cda Ecoauto Tunja- Revision tecnicomecanica, Emision de gases y contaminantes"
+            content="pagina oficial de Cda ecoauto en la ciudad de tunja es el mejor centro de diagnostico en tunja, certificando eficacia y productividad en la revision tecnicomecanica de vehiculos particulares, publicos y motocicletas"
+        />
+        <meta
+            property="Logo Cda Ecoauto Tunja"
+            content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fcdaecoautotunja%2F&psig=AOvVaw2Q1_D1zFXA4bwBP6KhRfGW&ust=1724335071910000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCmqe6ehogDFQAAAAAdAAAAABAN"
+        />
+
+        <!-- Twitter -->
+        <meta property="Instagram Cda Ecoauto Tunja" content="Cda Ecoauto Tunja" />
+        <meta
+            property="https://www.instagram.com/cda_ecoautotunja/"
+            content="https://cda-ecoauto-tunja.vercel.app/"
+        />
+        <meta property="Instagram Cda Ecoauto" content="CDA Ecoauto Tunja." />
+        <meta
+            property="Contacto cda ecoauto tunja"
+            content="Cda Ecoauto Tunja- Revision tecnicomecanica, Emision de gases y contaminantes"
+            content="pagina oficial de Cda ecoauto en la ciudad de tunja es el mejor centro de diagnostico en tunja, certificando eficacia y productividad en la revision tecnicomecanica de vehiculos particulares, publicos y motocicletas"
+        />
+        <meta
+            property="Revision Tecnicomecanica Tunja"
+            content="https://www.instagram.com/cda_ecoautotunja/"
+        />
+
+        <!-- Meta Tags Generated with https://metatags.io -->
+        <meta
+            name="Cda Ecoauto Tunja- Revision tecnicomecanica, Emision de gases y contaminantes"
+            content="pagina oficial de Cda ecoauto en la ciudad de tunja es el mejor centro de diagnostico en tunja, certificando eficacia y productividad en la revision tecnicomecanica de vehiculos particulares, publicos y motocicletas "
+        />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
 
@@ -24,19 +71,14 @@ const { currentLocale } = Astro;
         <slot />
 
         <script>
-
-
-            document.addEventListener('astro:page-load' ,()=>{
+            document.addEventListener("astro:page-load", () => {
                 const mobilebtn = document.querySelector(".btn");
                 const mobilmenu = document.querySelector("#menu");
 
                 mobilebtn?.addEventListener("click", () => {
                     mobilmenu.classList.toggle("hidden");
                 });
-            })
-
-        
-
+            });
         </script>
     </body>
 </html>
