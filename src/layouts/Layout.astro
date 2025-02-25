@@ -4,6 +4,7 @@ interface Props {
     title: string;
     description: string;
 }
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 const { title, description } = Astro.props;
 const { currentLocale } = Astro;
@@ -68,6 +69,7 @@ const { currentLocale } = Astro;
         <ViewTransitions />
     </head>
     <body>
+        <SpeedInsights />
         <slot />
 
         <script>

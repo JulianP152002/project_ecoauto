@@ -7,6 +7,10 @@ import Pre from '../../public/imgs/revision1.png'
 ---
 
 <section class=" flex flex-col m-auto justify-around items-center mt-24  w-full px-20 md:px-1 lg:px-10 lg:justify-between mm:px-2 relative sm:flex-col ">
+    <div class=" w-[110%] -mt-24 flex font-extrabold text-7xl h-[10rem] bg-red-600">
+        <h3 class='hola  text-nowrap mm:text-6xl md:text:4xl  text-black '>Ya disponible la linea para que hagas la revision de tu vehiculo Hibrido y Electrico¡</h3>
+        <h3 class='hola text-nowrap text-black mm:text-6xl md:text:4xl  '>  Ya disponible la linea para que hagas la revision de tu vehiculo Hibrido y Electrico¡</h3>
+    </div>
     <section class=" flex m-auto justify-around items-center mt-24 w-full px-20 lg:px-10 lg:justify-between mm:flex-col mm:px-2 relative lef">
         <div class=" flex  car relative container_img rounded-2xl overflow-hidden mm:mb-8 "> 
             <h2 class="absolute px-12 top-2/4 text-center text-white text-4xl mb-3 font-bold">Revisión Tecnicomecanica</h2>
@@ -36,7 +40,21 @@ import Pre from '../../public/imgs/revision1.png'
 
 
 <style>
+        .hola{
+            padding: 2rem;
+            animation: 30s animacion infinite linear;
+            display: flex;
 
+        }
+            @keyframes animacion {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(120%);
+            }
+        }
     .car:hover .car-content{
         right: 0;
         transition: all 800ms ease;
